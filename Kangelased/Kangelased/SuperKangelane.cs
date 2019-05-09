@@ -14,7 +14,7 @@ namespace Kangelased
             Random r = new Random();
             _Osavus = r.Next(1,5)+r.NextDouble();
         }
-        public override int Päästa(int Ohustatuid)
+        public int Päästa(int Ohustatuid)
         {
             return (int)Math.Round(Ohustatuid * (95 + _Osavus) / 100);
         }
